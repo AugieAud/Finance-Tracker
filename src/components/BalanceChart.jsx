@@ -1,5 +1,5 @@
 import { Bar } from "react-chartjs-2";
-import { CHart, BarElement, CategoryScale, LinearScale } from "chart.js";
+import { Chart, BarElement, CategoryScale, LinearScale } from "chart.js";
 Chart.register(BarElement, CategoryScale, LinearScale);
 
 export default function BalanceChart({ transactions }) {
