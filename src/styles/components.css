@@ -57,7 +57,7 @@ form input {
 form button {
   width: 100%;
   padding: 10px;
-  background-color: #4caf50;
+  background-color: pink;
   color: white;
   border: none;
   border-radius: 4px;
@@ -66,7 +66,7 @@ form button {
 }
 
 form button:hover {
-  background-color: #45a049;
+  background-color: rgb(248, 165, 178);
 }
 
 /* Transaction List Styles */
@@ -89,7 +89,7 @@ form button:hover {
 }
 
 .delete-btn {
-  background-color: #ff6b6b;
+  background-color: orange;
   color: white;
   border: none;
   border-radius: 50%;
@@ -104,7 +104,7 @@ form button:hover {
 }
 
 .delete-btn:hover {
-  background-color: #ff5252;
+  background-color: #ff9a52;
 }
 
 /* Chart Styles */
