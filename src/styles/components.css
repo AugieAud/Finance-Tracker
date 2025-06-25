@@ -1,8 +1,8 @@
 /* App Container Styles */
 .app-container {
-  padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .app-title {
@@ -14,19 +14,25 @@
 /* Layout Styles */
 .content-layout {
   display: flex;
-  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
   gap: 30px;
   margin-top: 30px;
 }
 
 .left-column {
-  flex: 0 0 35%;
-  min-width: 300px;
+  flex: 1 1 40%; /* Left column takes ~40% of space */
 }
 
 .right-column {
-  flex: 0 0 60%;
-  min-width: 400px;
+  flex: 1 1 55%; /* Right column takes ~55% of space */
+  max-width: 55%;
+}
+
+/* App title stays centered */
+.app-title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Form Styles */
