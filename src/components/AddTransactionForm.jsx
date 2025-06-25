@@ -5,7 +5,7 @@ export default function AddTransactionForm({ onAdd }) {
   const [amount, setAmount] = useState(""); //transaction amount
 
   const handleSubmit = (e) => {
-    e, preventDefault();
+    e.preventDefault();
     onAdd({ id: Date.now(), desc, amount: parseFloat(amount) });
     setDesc(""); //clear form inputs after submission
     setAmount("");
@@ -15,7 +15,7 @@ export default function AddTransactionForm({ onAdd }) {
     <form onSubmit={handleSubmit}>
       <input
         value={desc}
-        onChange={(e) => setAmount(e.target.value)}
+        onChange={(e) => setDesc(e.target.value)}
         placeholder="Description"
         required
       />

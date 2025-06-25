@@ -14,5 +14,22 @@ export default function BalanceChart({ transactions }) {
     ],
   };
 
-  return <Bar data={data} />;
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  };
+
+  return (
+    <div className="chart-container">
+      <h3>Transaction Chart</h3>
+      <div className="chart-wrapper">
+        <Bar data={data} options={options} />
+      </div>
+    </div>
+  );
 }

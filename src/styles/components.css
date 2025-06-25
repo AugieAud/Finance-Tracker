@@ -1,0 +1,122 @@
+/* App Container Styles */
+.app-container {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Layout Styles */
+.content-layout {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.left-column {
+  flex: 0 0 35%;
+  min-width: 300px;
+}
+
+.right-column {
+  flex: 0 0 60%;
+  min-width: 400px;
+}
+
+/* Form Styles */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Transaction List Styles */
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ff5252;
+}
+
+/* Chart Styles */
+.chart-container {
+  width: 100%;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.chart-wrapper {
+  height: 400px;
+  width: 100%;
+}

@@ -10,12 +10,25 @@ function App() {
     setTransactions([...transactions, tx]);
   };
 
+  const removeTransaction = (id) => {
+    setTransactions(transactions.filter((tx) => tx.id !== id));
+  };
+
   return (
-    <div>
-      <h1>Personal Finance Tracker</h1>
+    <div className="app-container">
+      <h1 className="app-title">Personal Finance Tracker</h1>
       <AddTransactionForm onAdd={addTransaction} />
-      <TransactionList transactions={transactions} />
-      <BalanceChart transactions={transactions} />
+      <div className="content-layout">
+        <div className="left-column">
+          <TransactionList
+            transactions={transactions}
+            onRemove={removeTransaction}
+          />
+        </div>
+        <div className="right-column">
+          <BalanceChart transactions={transactions} />
+        </div>
+      </div>
     </div>
   );
 }
