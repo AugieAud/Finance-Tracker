@@ -43,6 +43,7 @@ form {
   background-color: #f8f9fa;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 form input {
@@ -88,6 +89,21 @@ form button:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.transaction-date {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.transaction-desc {
+  font-weight: 500;
+}
+
 .delete-btn {
   background-color: orange;
   color: white;
@@ -125,4 +141,13 @@ form button:hover {
 .chart-wrapper {
   height: 400px;
   width: 100%;
+}
+
+.chart-spacer {
+  height: 30px;
+}
+
+/* Weekly Trend Chart Styles */
+.weekly-trend-container {
+  margin-top: 20px;
 }

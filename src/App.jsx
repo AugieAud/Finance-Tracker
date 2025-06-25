@@ -2,6 +2,7 @@ import { useLocalStorage } from "./hooks/useLocalStorage";
 import AddTransactionForm from "./components/AddTransactionForm";
 import TransactionList from "./components/TransactionList";
 import BalanceChart from "./components/BalanceChart";
+import WeeklyTrendChart from "./components/WeeklyTrendChart";
 
 function App() {
   const [transactions, setTransactions] = useLocalStorage("transactions", []);
@@ -28,6 +29,8 @@ function App() {
         </div>
         <div className="right-column">
           <BalanceChart transactions={transactions} />
+          <div className="chart-spacer"></div>
+          <WeeklyTrendChart transactions={transactions} />
         </div>
       </div>
     </div>
